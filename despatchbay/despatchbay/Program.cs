@@ -14,6 +14,10 @@ namespace wsdlConsole
 		private static string apiuser;
 		private static string apikey;
 
+		/**
+		 * Connects to the api endpoint, authorises and returns a ShippingService Object
+		 *  
+		**/
 		static ShippingService GetAuthoriseService ()
 		{
 			// Set up some credentials
@@ -27,6 +31,11 @@ namespace wsdlConsole
 			return Service;
 		}
 
+		/**
+		 * Loads configuration values from the configuration.xml
+		 * 
+		 * 
+		**/
 		static void LoadConfiguration ()
 		{
 			XmlDocument doc = new XmlDocument ();
@@ -44,13 +53,34 @@ namespace wsdlConsole
 			}
 		}
 
-		static void SampleGetDomesticServicesByPostcodeMethod ()
+
+		static void GetDomesticServicesMethod(string postcode){
+			var Service = GetAuthoriseService ();
+			try {
+				// Call the GetDomesticServicesByPostcode soap service
+				var availableServices = Service.GetDomesticServices (postcode);
+				// iterate though the list of returned services
+				int count = 0;
+				foreach (ServiceType element in availableServices) {
+					count += 1;
+					System.Console.WriteLine ("Element #{0}: {1} - {2} £{3}", count, element.ServiceID, element.Name, element.Cost);
+				}
+				Console.WriteLine ("Success");
+			} catch (Exception soapEx) {
+				Console.WriteLine ("{0}", soapEx.Message);
+			}
+		}
+		/**
+		 * An example of call the DBP api method GetDomesticServicesByPostcode 
+		 *
+		**/
+		static void GetDomesticServicesByPostcodeMethod (string postcode)
 		{			
 			var Service = GetAuthoriseService ();
 
 			try {
 				// Call the GetDomesticServicesByPostcode soap service
-				var availableServices = Service.GetDomesticServicesByPostcode ("LN12UE");
+				var availableServices = Service.GetDomesticServicesByPostcode (postcode);
 				// iterate though the list of returned services
 				int count = 0;
 				foreach (ServiceType element in availableServices) {
@@ -63,10 +93,14 @@ namespace wsdlConsole
 			}
 		}
 
-		static void AddDomesticShipmentwMethod ()
+		/**
+		 * An example of call the DBP api method AddDomesticShipmentMethod 
+		 *
+		**/
+		static string AddDomesticShipmentMethod ()
 		{
 			var Service = GetAuthoriseService ();
-
+			string  shipmentId = null; 
 			try {
 				ShipmentRequestType ShipmentRequest = new ShipmentRequestType ();
 				ShipmentRequest.CompanyName = "Acme Toy Company";
@@ -80,24 +114,33 @@ namespace wsdlConsole
 				ShipmentRequest.ServiceID = 47; // 47 - Small packet
 				ShipmentRequest.Street = "7 Shropshire Road";
 				ShipmentRequest.Town = "Lincoln";
-
-
-				Service.AddDomesticShipment (ShipmentRequest);
+				shipmentId = Service.AddDomesticShipment (ShipmentRequest);
 				Console.WriteLine ("Success");
 			} catch (Exception soapEx) {
 				Console.WriteLine ("{0}", soapEx.Message);
 			}
+
+			return shipmentId;
 		}
 
+		public static void GetShipmentMethod(string shipmentID){
+			var Service = GetAuthoriseService ();
+			try{
+				Service.GetShipment(shipmentID);
+			}catch(Exception soapEx){
+				Console.WriteLine ("{0}", soapEx.Message);
+			}
+			
+		}
 		public static void Main (string[] args)
 		{
 			LoadConfiguration ();
 
+			GetDomesticServicesMethod ("LN12UE");
 
+			//GetDomesticServicesByPostcodeMethod ("LN12UE");
+			//AddDomesticShipmentMethod ();
 
-			SampleGetDomesticServicesByPostcodeMethod ();
-
-			//AddDomesticShipmentwMethod ();
 
 
 		}
