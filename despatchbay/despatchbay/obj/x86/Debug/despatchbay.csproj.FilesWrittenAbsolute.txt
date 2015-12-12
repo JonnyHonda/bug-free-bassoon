@@ -1,0 +1,6 @@
+/home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/bin/Debug/despatchbay.exe.mdb
+/home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/bin/Debug/despatchbay.exe
+/home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/obj/x86/Debug/despatchbay.exe
+/home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/obj/x86/Debug/despatchbay.exe.mdb
+/home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/bin/Debug/configuration.xml

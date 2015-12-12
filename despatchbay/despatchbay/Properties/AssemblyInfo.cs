@@ -4,12 +4,12 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle ("wsdlConsole")]
+[assembly: AssemblyTitle ("despatchbay")]
 [assembly: AssemblyDescription ("")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("")]
 [assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("johnburrin")]
+[assembly: AssemblyCopyright ("john")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 
