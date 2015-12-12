@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<staging>
+		<ServerUrl>
+		http://api.release-3-36-0.despatchbaypro.st/soap/v11/shipping.php
+		</ServerUrl>
+		<ApiUser>26JG-AWEO8651
+		</ApiUser>
+		<ApiKey>UVNE409
+		</ApiKey>
+	</staging>
+	<production>
+		<ServerUrl>
+		</ServerUrl>
+		<ApiUser>
+		</ApiUser>
+		<ApiKey>
+		</ApiKey>
+	</production>
+</config>
