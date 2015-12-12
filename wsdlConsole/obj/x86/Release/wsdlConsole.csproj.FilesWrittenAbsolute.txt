@@ -1,0 +1,5 @@
+/Users/johnburrin/Projects/wsdlConsole/wsdlConsole/obj/x86/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/johnburrin/Projects/wsdlConsole/wsdlConsole/bin/Release/wsdlConsole.exe.mdb
+/Users/johnburrin/Projects/wsdlConsole/wsdlConsole/bin/Release/wsdlConsole.exe
+/Users/johnburrin/Projects/wsdlConsole/wsdlConsole/obj/x86/Release/wsdlConsole.exe
+/Users/johnburrin/Projects/wsdlConsole/wsdlConsole/obj/x86/Release/wsdlConsole.exe.mdb
