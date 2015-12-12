@@ -13,6 +13,7 @@ namespace wsdlConsole
 		private static string apiendpoint;
 		private static string apiuser;
 		private static string apikey;
+		private static string ShipmentID;
 
 		/**
 		 * Connects to the api endpoint, authorises and returns a ShippingService Object
@@ -85,7 +86,7 @@ namespace wsdlConsole
 				int count = 0;
 				foreach (ServiceType element in availableServices) {
 					count += 1;
-					System.Console.WriteLine ("Element #{0}: {1} - {2} £{3}", count, element.ServiceID, element.Name, element.Cost);
+					Console.WriteLine ("Element #{0}: {1} - {2} £{3}", count, element.ServiceID, element.Name, element.Cost);
 				}
 				Console.WriteLine ("Success");
 			} catch (Exception soapEx) {
@@ -123,10 +124,16 @@ namespace wsdlConsole
 			return shipmentId;
 		}
 
+
 		public static void GetShipmentMethod(string shipmentID){
 			var Service = GetAuthoriseService ();
+			ShipmentReturnType ShipmentRequest = new ShipmentReturnType (); 
+
+
+			
 			try{
-				Service.GetShipment(shipmentID);
+				ShipmentRequest = Service.GetShipment(shipmentID);
+				Console.WriteLine ("Parcel Quantity {0}", ShipmentRequest.ParcelQuantity);
 			}catch(Exception soapEx){
 				Console.WriteLine ("{0}", soapEx.Message);
 			}
@@ -136,13 +143,17 @@ namespace wsdlConsole
 		{
 			LoadConfiguration ();
 
-			GetDomesticServicesMethod ("LN12UE");
+			//GetDomesticServicesMethod ("LN12UE");
 
 			//GetDomesticServicesByPostcodeMethod ("LN12UE");
-			//AddDomesticShipmentMethod ();
+			Console.WriteLine ("Adding new Shipment");
 
+			ShipmentID = AddDomesticShipmentMethod ();
 
+			Console.WriteLine ("ShipmenId: {0}", ShipmentID);
+			Console.WriteLine ("Fetching new Shipment with id of {0}",ShipmentID);
 
+			GetShipmentMethod (ShipmentID);
 		}
 	}
 }
