@@ -3,12 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{2E822A4D-35E6-4F97-9BBE-AA139123A379}</ProjectGuid>
+    <ProjectGuid>{86E1B8C1-3838-4FD9-A226-73432E16F91B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>despatchbay</RootNamespace>
-    <AssemblyName>despatchbay</AssemblyName>
+    <RootNamespace>Tracking</RootNamespace>
+    <AssemblyName>Tracking</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseMSBuildEngine>False</UseMSBuildEngine>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,28 +35,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tracking.cs" />
     <Compile Include="Web References\api.despatchbaypro.com\Reference.cs">
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="configuration.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="tracking.wsdl" />
+    <None Include="Web References\api.despatchbaypro.com\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="Web References" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+    <WebReferenceUrl Include="http://api.despatchbaypro.com/soap/v11/tracking?wsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\api.despatchbaypro.com</RelPath>
-      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+      <UpdateFromURL>http://api.despatchbaypro.com/soap/v11/tracking?wsdl</UpdateFromURL>
     </WebReferenceUrl>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Web References\api.despatchbaypro.com\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="configuration.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 </Project>

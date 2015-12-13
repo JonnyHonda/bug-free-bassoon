@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "despatchbay", "despatchbay\despatchbay.csproj", "{2E822A4D-35E6-4F97-9BBE-AA139123A379}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipping", "despatchbay\Shipping.csproj", "{2E822A4D-35E6-4F97-9BBE-AA139123A379}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracking", "Tracking\Tracking.csproj", "{86E1B8C1-3838-4FD9-A226-73432E16F91B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Addressing", "Addressing\Addressing.csproj", "{9395FD06-A5AB-48BB-856B-D196CE6CA9BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +17,13 @@ Global
 		{2E822A4D-35E6-4F97-9BBE-AA139123A379}.Debug|x86.Build.0 = Debug|x86
 		{2E822A4D-35E6-4F97-9BBE-AA139123A379}.Release|x86.ActiveCfg = Release|x86
 		{2E822A4D-35E6-4F97-9BBE-AA139123A379}.Release|x86.Build.0 = Release|x86
+		{86E1B8C1-3838-4FD9-A226-73432E16F91B}.Debug|x86.ActiveCfg = Debug|x86
+		{86E1B8C1-3838-4FD9-A226-73432E16F91B}.Debug|x86.Build.0 = Debug|x86
+		{86E1B8C1-3838-4FD9-A226-73432E16F91B}.Release|x86.ActiveCfg = Release|x86
+		{86E1B8C1-3838-4FD9-A226-73432E16F91B}.Release|x86.Build.0 = Release|x86
+		{9395FD06-A5AB-48BB-856B-D196CE6CA9BD}.Debug|x86.ActiveCfg = Debug|x86
+		{9395FD06-A5AB-48BB-856B-D196CE6CA9BD}.Debug|x86.Build.0 = Debug|x86
+		{9395FD06-A5AB-48BB-856B-D196CE6CA9BD}.Release|x86.ActiveCfg = Release|x86
+		{9395FD06-A5AB-48BB-856B-D196CE6CA9BD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

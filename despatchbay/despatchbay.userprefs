@@ -1,13 +1,13 @@
-﻿<Properties StartupItem="despatchbay/despatchbay.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="despatchbay/configuration.xml">
-    <Files>
-      <File FileName="despatchbay/Program.cs" Line="27" Column="3" />
-      <File FileName="despatchbay/configuration.xml" Line="7" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <StartupItems>
+    <String>despatchbay/Shipping.csproj</String>
+    <String>Tracking/Tracking.csproj</String>
+    <String>Addressing/Addressing.csproj</String>
+  </StartupItems>
 </Properties>

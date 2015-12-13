@@ -217,16 +217,10 @@ namespace despatchbay.api.despatchbaypro.com {
         public int ParcelQuantity;
         
         /// <remarks/>
-        public string Printed;
-        
-        /// <remarks/>
         public string StartTrackingNumber;
         
         /// <remarks/>
         public string EndTrackingNumber;
-        
-        /// <remarks/>
-        public string Despatched;
         
         /// <remarks/>
         public string DespatchDate;

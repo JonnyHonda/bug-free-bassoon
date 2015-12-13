@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:despatchbay" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:despatchbay">
 <types>
-<xsd:schema targetNamespace="urn:despatchbay"
->
+<xsd:schema targetNamespace="urn:despatchbay">
  <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
  <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
  <xsd:complexType name="ServiceType">
@@ -25,10 +24,8 @@
    <xsd:element name="ServiceID" type="xsd:int" minOccurs="1" maxOccurs="1"/>
    <xsd:element name="CreateDate" type="xsd:string" minOccurs="1" maxOccurs="1"/>
    <xsd:element name="ParcelQuantity" type="xsd:int" minOccurs="1" maxOccurs="1"/>
-   <xsd:element name="Printed" type="xsd:bool" minOccurs="1" maxOccurs="1"/>
    <xsd:element name="StartTrackingNumber" type="xsd:string" minOccurs="0" maxOccurs="1"/>
    <xsd:element name="EndTrackingNumber" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-   <xsd:element name="Despatched" type="xsd:bool" minOccurs="1" maxOccurs="1"/>
    <xsd:element name="DespatchDate" type="xsd:string" minOccurs="0" maxOccurs="1"/>
    <xsd:element name="OrderReference" type="xsd:string" minOccurs="1" maxOccurs="1"/>
    <xsd:element name="Contents" type="xsd:string" minOccurs="1" maxOccurs="1"/>
