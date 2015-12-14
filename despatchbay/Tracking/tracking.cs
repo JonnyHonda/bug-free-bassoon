@@ -40,7 +40,7 @@ private static string apiendpoint;
 			doc.Load ("configuration.xml");
 			XmlNode node;
 			try {
-				node = doc.DocumentElement.SelectSingleNode ("/configuration/trackingapiendpoint");
+				node = doc.DocumentElement.SelectSingleNode ("/configuration/apiendpoint");
 				apiendpoint = node.InnerText;
 				node = doc.DocumentElement.SelectSingleNode ("/configuration/apiuser");
 				apiuser = node.InnerText;

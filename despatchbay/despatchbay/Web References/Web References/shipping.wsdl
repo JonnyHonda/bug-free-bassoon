@@ -24,8 +24,10 @@
           <xsd:element minOccurs="1" maxOccurs="1" name="ServiceID" type="xsd:int" />
           <xsd:element minOccurs="1" maxOccurs="1" name="CreateDate" type="xsd:string" />
           <xsd:element minOccurs="1" maxOccurs="1" name="ParcelQuantity" type="xsd:int" />
+          <xsd:element mustUnderstand="0|1" minOccurs="0" maxOccurs="1" name="Printed" type="xsd:bool" />
           <xsd:element minOccurs="0" maxOccurs="1" name="StartTrackingNumber" type="xsd:string" />
           <xsd:element minOccurs="0" maxOccurs="1" name="EndTrackingNumber" type="xsd:string" />
+          <xsd:element mustUnderstand="0|1" minOccurs="0" maxOccurs="1" name="Despatched" type="xsd:bool" />
           <xsd:element minOccurs="0" maxOccurs="1" name="DespatchDate" type="xsd:string" />
           <xsd:element minOccurs="1" maxOccurs="1" name="OrderReference" type="xsd:string" />
           <xsd:element minOccurs="1" maxOccurs="1" name="Contents" type="xsd:string" />

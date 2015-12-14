@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DiscoveryClientResultsFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Results>
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl" filename="/shipping.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///Users/johnburrin/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl" filename="/shipping.wsdl" />
   </Results>
 </DiscoveryClientResultsFile>

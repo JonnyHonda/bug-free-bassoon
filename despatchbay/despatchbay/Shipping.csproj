@@ -45,13 +45,12 @@
     <None Include="configuration.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="EmptyXmlFile.xml" />
     <None Include="shipping.wsdl" />
+    <None Include="..\..\..\..\..\..\shipping.wsdl" />
     <None Include="Web References\api.despatchbaypro.com\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="..\..\..\..\..\..\shipping.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="." />
@@ -64,16 +63,6 @@
     </WebReferenceUrl>
     <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References</RelPath>
-      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
-    </WebReferenceUrl>
-    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References</RelPath>
-      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
-    </WebReferenceUrl>
-    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
-      <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\api.despatchbaypro.com</RelPath>
       <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
     </WebReferenceUrl>
@@ -94,13 +83,83 @@
     </WebReferenceUrl>
     <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\api.despatchbaypro.com</RelPath>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
+      <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References</RelPath>
       <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
     </WebReferenceUrl>
     <WebReferenceUrl Include="file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\Web References</RelPath>
       <UpdateFromURL>file:///home/john/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="file:///Users/johnburrin/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\api.despatchbaypro.com</RelPath>
+      <UpdateFromURL>file:///Users/johnburrin/Projects/bug-free-bassoon/despatchbay/despatchbay/shipping.wsdl</UpdateFromURL>
     </WebReferenceUrl>
   </ItemGroup>
 </Project>

@@ -40,9 +40,10 @@ namespace wsdlConsole
 		{
 			XmlDocument doc = new XmlDocument ();
 			doc.Load ("configuration.xml");
-			XmlNode node;
+
 			try {
-				node = doc.DocumentElement.SelectSingleNode ("/configuration/shippingapiendpoint");
+				XmlNode node;
+				node = doc.DocumentElement.SelectSingleNode ("/configuration/apiendpoint");
 				apiendpoint = node.InnerText;
 				node = doc.DocumentElement.SelectSingleNode ("/configuration/apiuser");
 				apiuser = node.InnerText;
@@ -165,7 +166,7 @@ namespace wsdlConsole
 			Console.WriteLine ("\n\n\n============================================");
 			Console.WriteLine ("Calling GetDomesticServicesByPostcode");
 			availableServices = null;
-			availableServices = GetDomesticServicesByPostcodeMethod ("LN12UE");
+			availableServices = GetDomesticServicesByPostcodeMethod ("LN67FL");
 			// iterate though the list of returned services
 			count = 0;
 			foreach (ServiceType element in availableServices) {
@@ -177,6 +178,7 @@ namespace wsdlConsole
 			 * Demonstrate adding a shipment
 			 * 
 			 **/
+
 			Console.WriteLine ("\n\n\n============================================");
 			Console.WriteLine ("Calling AddDomesticShipment");
 			string shipmentId = null; 
@@ -190,7 +192,7 @@ namespace wsdlConsole
 			Console.WriteLine ("\n\n\n============================================");
 			Console.WriteLine ("Calling GetShipment");
 			ShipmentReturnType shipmentDetail = null; 
-			//string shipmentId = "101788-8368241";
+
 			Console.WriteLine ("Fetching added Shipment with id of {0}",shipmentId);
 
 			shipmentDetail = GetShipmentMethod (shipmentId);
@@ -205,15 +207,31 @@ namespace wsdlConsole
 			Console.WriteLine ("Postcode {0}", shipmentDetail.Postcode);
 			Console.WriteLine ("Contents {0}", shipmentDetail.Contents);
 			Console.WriteLine ("CreateDate {0}", shipmentDetail.CreateDate);
-			Console.WriteLine ("DespatchDate {0}", shipmentDetail.DespatchDate);
+
 			Console.WriteLine ("ParcelQuantity {0}", shipmentDetail.ParcelQuantity);
 			Console.WriteLine ("OrderReference {0}", shipmentDetail.OrderReference);
 			Console.WriteLine ("DashboardNotification {0}", shipmentDetail.DashboardNotification);
-			//Console.WriteLine ("Despatched {0}", shipmentDetail.Despatched);
+			Console.WriteLine ("Despatched {0}", shipmentDetail.Despatched);
 			Console.WriteLine ("EmailNotification {0}", shipmentDetail.EmailNotification);
 			Console.WriteLine ("EndTrackingNumber {0}", shipmentDetail.EndTrackingNumber);
 
-			//Console.WriteLine ("Printed {0}", shipmentDetail.Printed);
+
+			/// There is some funkyness going on with the way the wsdl file treat these to fields
+			/// // in order to get this to work I have had to override the declarations of the fields in 
+			/// the We References/ReferenceMap/Reference.rs file
+			/// 
+			/// [System.Xml.Serialization.SoapIgnoreAttribute()]
+			/// public string Despatched
+			/// 
+			/// And
+			/// 
+			/// [System.Xml.Serialization.SoapIgnoreAttribute()]
+			/// public string Printed;
+			/// 
+
+			Console.WriteLine ("Printed {0}", shipmentDetail.Printed);
+			Console.WriteLine ("DespatchDate {0}", shipmentDetail.DespatchDate);	
+
 
 			Console.WriteLine ("ServiceID {0}", shipmentDetail.ServiceID);
 			Console.WriteLine ("ShipmentID {0}", shipmentDetail.ShipmentID);

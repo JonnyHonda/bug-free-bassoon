@@ -42,7 +42,7 @@ namespace Addressing
 			doc.Load ("configuration.xml");
 			XmlNode node;
 			try {
-				node = doc.DocumentElement.SelectSingleNode ("/configuration/addressingapiendpoint");
+				node = doc.DocumentElement.SelectSingleNode ("/configuration/apiendpoint");
 				apiendpoint = node.InnerText;
 				node = doc.DocumentElement.SelectSingleNode ("/configuration/apiuser");
 				apiuser = node.InnerText;
